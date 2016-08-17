@@ -3,9 +3,46 @@
 /* Responsive */
 
 @media screen and (max-width : 920px) {
-
+	body{
+		background: red;
+	}
 }
 
 @media screen and (max-width: 600px) {
-
+	body{
+		background: pink;
+	}
+}
+/*imagenes adaptadas a las columnas que las contienen*/
+img{
+	width: 100%;
+}
+/*quita viñetas*/
+ul{
+	list-style: none;
+}
+/*ordea horizotal y cambia de color*/
+li{
+	display: inline;
+	color: white;
+	margin-left: 4%;
+}
+/*fondo negro*/
+.negro{
+	background: black;
+}
+/*tamaño para logo*/
+#logo{
+	width: 50%;
+}
+/*tipografia*/
+.courgette{
+	font-family: 'Courgette', cursive;
+}
+/*tipografia para toda la pagina*/
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+.cursiva{
+	font-style: italic;
 }
