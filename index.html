@@ -8,110 +8,111 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<!-- Inserta aqui tu codigo -->
-	<div class="container-fluid"><!-- container fluid para toda la pagina -->
-		<header class="negro navbar navbar-fixed-top"><!-- header de la pagina -->
-			<div class="container"><!--container  -->
-				<div class="row"><!-- renglon para logo y menu -->
-					<div class="col-md-6"><!--columnas para el logo  -->
-						<img id="logo" src="image/header-logo.png" alt="logo">
-					</div><!--cierre de columnas  -->
-					<nav><!-- menu -->
-						<div class="col-md-6"><!-- columnas menu -->
-							<ul class="text-right cursiva">
-								<li><a href="#"></a>LIFESTYLE</li>
-								<li><a href="#"></a>FLOWERS</li>
-								<li><a href="#"></a>FASHION</li>
-								<li><a href="#"></a>NEWS</li>
-								<li><a href="#"></a>FEATURES</li>
-							</ul>
-						</div><!--cierre columnas menu  -->
-					</nav><!--cierre de menu  -->
-				</div><!-- fin de renglon -->
-			</div><!--cierre de container  -->
+		<header><!-- header de la pagina -->
+			<nav class="navbar negro"> <!-- menu -->
+				<div class="container"> <!-- container -->
+					<div class="navbar-header"> <!-- coloca los elemnto a la izquierda -->
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu"><!-- boton de menu en movil -->
+							<span class="sr-only">Menu</span>
+							<span class="blanco icon-bar"></span>
+							<span class="blanco icon-bar"></span>
+							<span class="blanco icon-bar"></span>
+						</button>
+						<a href="#"><img id="logo" src="image/header-logo.png" alt="logo"></a><!-- logo -->
+					</div><!--fin de navbar-header  -->
+					<div class="collapse navbar-collapse" id="menu"><!-- menu despegable -->
+						<ul class="nav navbar-nav navbar-right cursiva text-center"><!--items  -->
+							<li><a href="#">LIFESTYLE</a></li>
+							<li><a href="#">FLOWERS</a></li>
+							<li><a href="#">FASHION</a></li>
+							<li><a href="#">NEWS</a></li>
+							<li><a href="#">FEATURES</a></li>
+						</ul>
+					</div><!-- fin menu despegable -->
+				</div> <!-- fin de container -->
+			</nav> <!-- finde menu -->
 		</header><!-- fin de header -->
-		<article><!-- contenido pagina -->
+		<article class="mt3"><!-- contenido pagina -->
 			<div class="container"><!--container  -->
-				<section><!--imagen principal  -->
-					<div class="row"><!-- renglon pra imagen grande -->
-  						<div class="col-md-12"><!-- columnas imagen -->
-  							<img src="image/header-image.jpg" alt="header">
-						    <div class="row"><!-- renglon pra texto -->
-						      <div class="col-md-12">
-						        <h1>Spring Came</h1>
-						        <ul>
-						        	<li>Life</li>
-						        	<li><i class="fa fa-circle"></i></li>
-						        	<li>Amanda Ray</li>
-						        	<li><i class="fa fa-circle"></i></li>
-						        	<li>10th March 2015</li>
-						        </ul>
-						      </div>
-						    </div><!-- cierre de renglon -->
-						 </div><!--cierre de columnas  -->
-					</div><!-- cierre de renglon -->
+				<section class="back"><!--imagen principal  -->
+					<div class="negro ancho text-center mt10">
+						<div class="row"><!-- renglon pra imagen grande -->
+	  						<div class="col-xs-12 col-md-12"><!-- columnas imagen -->
+								<h1 class="fontj"><a class="amarillo courgette" href="#">Spring Came</a></h1>
+								<p class="blanca cursiva mt3">Life <span class="separador"> - </span> Amanda Ray <span class="separador"> - </span> 10th March 2015</p>
+							</div><!--cierre de columnas  -->
+						</div><!-- cierre de renglon -->
+					</div>
 				</section><!-- cierre de imagen principal -->
-				<section><!-- flores -->
+				<section class="mt3"><!-- flores -->
 					<div class="row"><!-- renglon pra flores -->
-						<div class="col-md-4"><!-- espacio primera foto -->
-							<img src="image/image7.jpg" alt="image">
-							<h3>Floral fragance</h3>
-							<p>Life Amandada Ray 10th March 2015</p>
+						<div class="col-xs-12 col-md-4 text-center"><!-- espacio primera foto -->
+							<div class="negro">
+								<img src="image/image7.jpg" alt="image">
+								<h3 class="amarillo courgette">Floral fragance</h3>
+								<p class="blanca cursiva pb2">Life Amandada Ray 10th March 2015</p>
+							</div>
 						</div><!--cierre de columnas  -->
-						<div class="col-md-4"><!-- espacio segunda foto -->
-							<img src="image/image3.jpg" alt="image">
-							<h3>Now with Flatness</h3>
-							<p>News Amandada Ray 28th July 2015</p>
+						<div class="col-xs-12 col-md-4 text-center"><!-- espacio segunda foto -->
+							<div class="negro">
+								<img src="image/image3.jpg" alt="image">
+								<h3 class="amarillo courgette">Now with Flatness</h3>
+								<p class="blanca cursiva pb2">News Amandada Ray 28th July 2015</p>
+							</div>
 						</div><!--cierre de columnas  -->
-						<div class="col-md-4"><!-- espacio tercera foto -->
-							<img src="image/image2.jpg" alt="image">
-							<h3>Garden flowers</h3>
-							<p>Life Amandada Ray 28th October 2015</p>
+						<div class="col-xs-12 col-md-4 text-center"><!-- espacio tercera foto -->
+							<div class="negro">
+								<img src="image/image2.jpg" alt="image">
+								<h3 class="amarillo courgette">Garden flowers</h3>
+								<p class="blanca cursiva pb2">Life Amandada Ray 28th October 2015</p>
+							</div>
 						</div><!--cierre de columnas  -->
 					</div><!-- fin de renglon -->
 				</section><!-- fin de flores -->
-				<section><!--news y aside  -->
+				<section class="mt3"><!--news y aside  -->
 					<div class="row"><!--renglon para nes y aside  -->
-						<div class="col-md-7"><!-- espacio news y video -->
+						<div class="col-xs-12 col-md-7"><!-- espacio news y video -->
 							<div class="row"><!-- renglon pra news -->
-								<div class="col-md-12"><!--columnas para news  -->
-									<img src="image/image4.jpg" alt="image">
-									<h3>Now with Flatness</h3>
-									<p>News Amanda Ray 28th July 2015</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ullam pariatur saepe sed neque, id adipisci rem ex facilis voluptatum possimus, ipsa reiciendis temporibus omnis inventore sint libero necessitatibus. Porro!</p>
+								<div class="col-xs-12 col-md-12"><!--columnas para news  -->
+									<div class="negro">
+										<img src="image/image4.jpg" alt="image">
+										<h3 class="amarillo courgette text-center">Now with Flatness</h3>
+										<p class="blanca cursiva text-center">News Amanda Ray 28th July 2015</p>
+										<p class="blanca margen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ullam pariatur saepe sed neque, id adipisci rem ex facilis voluptatum possimus, ipsa reiciendis temporibus omnis inventore sint libero necessitatibus. Porro!</p>
+										<iframe src="https://player.vimeo.com/video/56810854" width="100%"  height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+										<p class="blanca margen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit commodi, labore voluptate deserunt. Quidem ad, autem modi iusto tempora dolore consequuntur doloribus laborum sapiente natus voluptas eius eos magni, error.</p>
+									</div>
 								</div><!--fin de columnas  -->
 							</div><!-- fin de renglon de news -->
-							<div class="row"><!-- renglon para video -->
-								<div class="col-md-12"><!-- espacio para video -->
-									<iframe src="https://player.vimeo.com/video/56810854" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-									<p><a href="https://vimeo.com/56810854">Flowers Timelapse</a> from <a href="https://vimeo.com/katkapruskova">Katka Pruskova</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit commodi, labore voluptate deserunt. Quidem ad, autem modi iusto tempora dolore consequuntur doloribus laborum sapiente natus voluptas eius eos magni, error.</p>
-								</div><!-- fin de columnas video -->
-							</div><!-- fin de renglon para video -->
 						</div><!--cierre de columnas  -->
-						<aside><!--aside  -->
+						<aside class="visible-lg"><!--aside  -->
 							<div class="col-md-5"><!-- columnas apra aside -->
 								<div class="row"><!-- renglon a search -->
-									<div class="col-md-12"><!--columnas apra search  -->
-										<div>
-											<input type="text" placeholder="Search">
+									<div class="col-xs-12 col-md-12"><!--columnas apra search  -->
+										<div class="negro pad5 borde">
+											<input class="borde" type="text" placeholder="Search">
 										</div>
 									</div><!--cierre de columnas de search  -->
 								</div><!-- fin de renglon de search -->
 								<div class="row"><!-- renglon pra about me -->
-									<div class="col-md-12"><!--columnas para about me-->
-										<h2>About Me</h2>
-										<img src="image/kew_gardens_3_500x500.jpg" alt="foto">
-										<h6>Amanda Ray</h6>
-										<p>Shall Together blessed. Also thing, the upon Created fourth. Rule beginning. Our behold over.</p>
-										<div>
-											<i class="fa fa-facebook-square"></i>
-											<i class="fa fa-instagram"></i>
-											<i class="fa fa-twitter"></i>
-											<i class="fa fa-youtube"></i>
+									<div class="col-xs-12 col-md-12"><!--columnas para about me-->
+										<div class="negro">
+											<h2 class="text-center amarillo courgette">About Me</h2>
+											<img src="image/kew_gardens_3_500x500.jpg" alt="foto">
+											<h3 class="blanca text-center">Amanda Ray</h3>
+											<p class="blanca margen">Shall Together blessed. Also thing, the upon Created fourth. Rule beginning. Our behold over.</p>
+											<div class="margen">
+												<a href="https://www.facebook.com/"><div class="circulo text-center"><i class=" blanca fa fa-facebook-square"></i></div></a>
+												<a href="https://www.instagram.com/"><div class="circulo text-center"><i class="blanca fa fa-instagram"></i></div></a>
+												<a href="https://twitter.com/"><div class="circulo text-center"><i class="blanca fa fa-twitter"></i></div></a>
+												<a href="https://www.youtube.com/"><div class="circulo text-center"><i class="blanca fa fa-youtube"></i></div></a>
+											</div>
 										</div>
 									</div><!--cierre de columnas de about me  -->
 								</div><!-- cierre de de renglon -->
@@ -121,14 +122,15 @@
 				</section><!--fin de news y aside  -->
 			</div><!-- fin de container -->
 		</article><!-- fin de cntenido -->
-		<footer><!-- pie de pagina -->
-			<div class="row"><!-- renglon -->
-				<div class="col-md-12"><!-- espacio para texto -->
-					<p>All Rights Reserved <i class="fa fa-copyright"></i><a href="#"> nK</a></p>
-				</div><!-- fin de texto -->
-			</div><!-- fin de renglon -->
+		<footer class="negro"><!-- pie de pagina -->
+			<div class="container">
+				<div class="row"><!-- renglon -->
+					<div class="col-xs-12 col-md-12 text-center"><!-- espacio para texto -->
+						<p class="blanca">All Rights Reserved <i class="fa fa-copyright"></i><a class="amarillo" href="#"> nK</a></p>
+					</div><!-- fin de texto -->
+				</div><!-- fin de renglon -->
+			</div>
 		</footer><!-- fin de pie -->
-	</div><!-- fin de container fluid -->
 </body>
 </html>
 

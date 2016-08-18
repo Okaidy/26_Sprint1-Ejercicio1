@@ -3,33 +3,38 @@
 /* Responsive */
 
 @media screen and (max-width : 920px) {
-	body{
-		background: red;
-	}
+
 }
 
 @media screen and (max-width: 600px) {
-	body{
-		background: pink;
+	div.ancho{
+		width: 85%;
+		height: 90%;
+	}
+	h1.fontj{
+		margin-bottom: 2%;
+		font-size: 8rem;
+	}
+	p.mt3{
+		margin-top: 30%;
 	}
 }
 /*imagenes adaptadas a las columnas que las contienen*/
 img{
 	width: 100%;
 }
-/*quita viñetas*/
-ul{
-	list-style: none;
-}
-/*ordea horizotal y cambia de color*/
-li{
-	display: inline;
+/*cambia de color a los enlaces*/
+a{
 	color: white;
-	margin-left: 4%;
+
 }
 /*fondo negro*/
 .negro{
-	background: black;
+	background: #120f15;
+}
+/*color para el menu en movil*/
+.blanco{
+	background-color: white !important;
 }
 /*tamaño para logo*/
 #logo{
@@ -45,4 +50,82 @@ li{
 }
 .cursiva{
 	font-style: italic;
+}
+/*fondo de pagina*/
+body{
+	background: #2d2735;
+}
+.amarillo{
+	color:#f7ba6a;
+}
+.mt10{
+	margin-top: 10%;
+}
+.mt5{
+	margin-top: 5%;
+}
+/*imagenes de flores de fondo*/
+.back{
+	background-image: url(../image/header-image.jpg);
+	height: 450px;
+	max-width: 100%;
+	background-size:cover;
+	padding-top:9%; 
+}
+/**/
+.ancho{
+	/*width:60%;
+	height: 70%;*/
+	width:700px;
+	height: 250px;
+	margin: auto;
+	padding: 3% 0%;
+}
+.fontj{
+	font-size:9rem;
+}
+.blanca{
+	color: white;
+}
+/*lineas separadoras en banner*/
+.separador{
+	margin: 0% 2%;
+}
+.mt3{
+	margin-top: 3%;
+}
+.pb2{
+	padding-bottom: 3%;
+}
+input{
+	width: 100%;
+	background: #2d2735;
+	border:none;
+	padding: 3%;
+}
+.pad5{
+	padding: 5%;
+}
+.borde{
+	border-radius: 5px;
+}
+.circulo{
+	display: inline-block;
+	background: #2d2735;
+	border-radius: 50%;
+	width: 6%;
+	padding: 1%;
+	margin-left: 2%;
+}
+.margen{
+	padding: 0% 2% 2%;
+}
+footer{
+	margin-top: 2%;
+	padding: 2%;
+}
+a:hover {
+    color: #f39821 !important;
+  	background-color:#120f15  !important;
+    text-decoration: none;
 }
